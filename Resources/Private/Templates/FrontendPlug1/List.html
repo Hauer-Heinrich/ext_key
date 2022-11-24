@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="content">
+    <h1>My Frontend Plugin 1</h1>
+
+    <f:flashMessages />
+
+    <f:debug title="all">{_all}</f:debug>
+    <f:debug title="settings (among others flexform settings)">{settings}</f:debug>
+
+    <div class="tx_extkey">
+        <f:for each="{addresses}" as="address">
+            <div>
+                <f:link.action action="show" arguments="{address : address}">
+                    <span>{address.title}</span> <span>{address.name}</span>
+                </f:link.action>
+                <span>{address.slug}</span>
+                <span>{address.image.originalResource.name}</span>
+                <span>
+                    <f:format.html>{address.description}</f:format.html>
+                </span>
+            </div>
+        </f:for>
+    </div>
+</f:section>
+
+</html>

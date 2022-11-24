@@ -1,0 +1,26 @@
+### http://www.domain.tld/
+### ?tx_extkey_myfrontendplug1[action]=show
+### &tx_extkey_myfrontendplug1[address]=1
+### &tx_extkey_myfrontendplug1[controller]=FrontendPlug1
+### &cHash=598a1621bc.......
+
+routeEnhancers:
+  MyAddressDetail:
+    type: Extbase
+    extension: ExtKey
+    plugin: myfrontendplug1
+    defaultController: 'FrontendPlug1::show'
+    routes:
+      - {
+        routePath: '/{addressSlug}',
+        _controller: 'FrontendPlug1::show',
+        _arguments: {
+          'addressSlug': 'address'
+        }
+      }
+    aspects:
+      addressSlug: {
+        type: 'PersistedAliasMapper',
+        tableName: 'tx_extkey_domain_model_address',
+        routeFieldName: 'slug'
+      }

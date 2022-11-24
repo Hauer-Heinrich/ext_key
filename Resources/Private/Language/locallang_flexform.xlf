@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ext_key/Resources/Private/Language/locallang_flexform.xlf" date="2022-11-24T16:39:22Z" product-name="ext_key">
+        <header/>
+        <body>
+            <trans-unit id="singlePid.label" resname="tx_extkey_domain_model_address">
+                <source>Field label</source>
+            </trans-unit>
+            <trans-unit id="singlePid.description" resname="tx_extkey_domain_model_address">
+                <source>Field description</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

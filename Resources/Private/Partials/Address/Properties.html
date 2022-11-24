@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<table class="tx-ext-key">
+    <tr>
+        <td><f:translate key="tx_extkey_domain_model_address.title" /></td>
+        <td>{address.title}</td>
+    </tr>
+    <tr>
+        <td><f:translate key="tx_extkey_domain_model_address.name" /></td>
+        <td>{address.name}</td>
+    </tr>
+    <tr>
+        <td><f:translate key="tx_extkey_domain_model_address.slug" /></td>
+        <td>{address.slug}</td>
+    </tr>
+    <f:if condition="{address.image}">
+        <tr>
+            <td><f:translate key="tx_extkey_domain_model_address.image" /></td>
+            <td>
+                <f:image src="{address.image.originalResource.publicUrl}" width="200"/>
+            </td>
+        </tr>
+    </f:if>
+    <tr>
+        <td><f:translate key="tx_extkey_domain_model_address.description" /></td>
+        <td><f:format.html>{address.description}</f:format.html></td>
+    </tr>
+</table>
+
+</html>

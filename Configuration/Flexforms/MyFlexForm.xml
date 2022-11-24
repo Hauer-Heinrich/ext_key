@@ -1,0 +1,46 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <sheetTitle>
+                    LLL:EXT:ext_key/Resources/Private/Language/locallang_flexform.xlf:sheetTitle
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <settings.layout>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:ext_key/Resources/Private/Language/locallang_flexform.xlf:singlePid.label
+                            </label>
+                            <description>
+                                LLL:EXT:ext_key/Resources/Private/Language/locallang_flexform.xlf:singlePid.description
+                            </description>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <default>default</default>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">default</numIndex>
+                                        <numIndex index="1">default</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Option 1</numIndex>
+                                        <numIndex index="1">option-key-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Option 2)</numIndex>
+                                        <numIndex index="1">option-key-2</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.layout>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

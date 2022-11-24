@@ -1,0 +1,16 @@
+mod {
+    wizards.newContentElement.wizardItems.plugins {
+        elements {
+            myfrontendplug1 {
+                iconIdentifier = ext_key-plugin-myfrontendplug1
+                title = LLL:EXT:ext_key/Resources/Private/Language/locallang_db.xlf:tx_ext_key_myfrontendplug1.name
+                description = LLL:EXT:ext_key/Resources/Private/Language/locallang_db.xlf:tx_ext_key_myfrontendplug1.description
+                tt_content_defValues {
+                    CType = list
+                    list_type = extkey_myfrontendplug1
+                }
+            }
+        }
+        show = *
+    }
+}

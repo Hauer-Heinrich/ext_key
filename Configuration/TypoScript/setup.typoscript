@@ -1,0 +1,31 @@
+plugin.tx_extkey_myfrontendplug1 {
+    view {
+        templateRootPaths {
+            0 = EXT:ext_key/Resources/Private/Templates/
+            1 = {$plugin.tx_extkey_myfrontendplug1.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:ext_key/Resources/Private/Partials/
+            1 = {$plugin.tx_extkey_myfrontendplug1.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:ext_key/Resources/Private/Layouts/
+            1 = {$plugin.tx_extkey_myfrontendplug1.view.layoutRootPath}
+        }
+    }
+
+    persistence {
+        storagePid = {$plugin.tx_extkey_myfrontendplug1.persistence.storagePid}
+        #recursive = 1
+    }
+
+    features {
+        #skipDefaultArguments = 1
+        ### if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}

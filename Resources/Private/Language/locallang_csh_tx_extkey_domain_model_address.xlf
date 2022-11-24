@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ext_key/Resources/Private/Language/locallang_csh_tx_extkey_domain_model_address.xlf" date="2022-11-24T16:39:22Z" product-name="ext_key">
+        <header/>
+        <body>
+            <trans-unit id="title.description" resname="title.description">
+                <source>title</source>
+            </trans-unit>
+            <trans-unit id="name.description" resname="name.description">
+                <source>name</source>
+            </trans-unit>
+            <trans-unit id="slug.description" resname="slug.description">
+                <source>slug</source>
+            </trans-unit>
+            <trans-unit id="image.description" resname="image.description">
+                <source>image</source>
+            </trans-unit>
+            <trans-unit id="description.description" resname="description.description">
+                <source>description</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
