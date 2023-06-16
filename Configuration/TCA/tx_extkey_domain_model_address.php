@@ -116,8 +116,9 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
+                'eval' => 'trim',
+                'required' => true,
+                'default' => '',
             ],
         ],
         'slug' => [
